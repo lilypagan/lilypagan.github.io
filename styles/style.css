@@ -1,0 +1,81 @@
+.home-pic {
+  width: 100%;
+  padding: 0;
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  float: left;
+  height: 50%;
+}
+
+#me-pic {
+  position: absolute;
+  left: 10%;
+  color: white;
+  vertical-align: center;
+  margin: 0 auto;
+  top: 30%;
+  width: 22%;
+}
+
+.title-text {
+  position: absolute;
+  top: 36%;
+  left: 35%;
+  text-align: center;
+  font-size: 45px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.subtitle-text {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-weight: bold;
+  text-align: left;
+}
+
+ul {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  width: 100%;
+  display: inline-block;
+  padding-left: 73%;
+  padding-top: 2%;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 1.7vw;
+  margin: 10px;
+  font-weight:bold;
+  color: #fdad01;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: black;
+  border-bottom: black 3px solid;
+}
+
+.contact-icons  {
+  position: absolute;
+  left: 35%;
+  top: 63%;
+  width: 30%;
+}
+
+.contact-icons a {
+  margin-right: 5%;
+}

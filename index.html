@@ -3,18 +3,35 @@
 <head>
  <meta charset="UTF-8">
  <title>HISTORY</title>
- <link rel="stylesheet" type="text/css" href="style/all.css" media="all"/>
+ <!--bootstrap-->
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="styles/style.css" media="all"/>
 </head>
 
 <body>
-
 <!--navigation-->
-<nav>
+<nav class = "navbar">
   <ul>
-    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html">About</a></li>
     <li><a href="work.html">Work</a></li>
-    <li><a  href="about.html">About</a></li>
     <li><a  href="contact.html">Contact</a></li>
   </ul>
 </nav>
+
+<div class= 'container-fluid'>
+  <img class="home-pic" alt="orange background" src="images/orange.jpg"/>
+  <img id="me-pic" alt= 'me' src="images/me.png"/>
+  <div class="intro">
+    <h1 class= "title-text"> HI, I'M LILY. </h1>
+    <h3 class= "subtitle-text"> Web Designer & Full Stack Developer </h3>
+    <div class= 'contact-icons'>
+      <a href='mailto:lp398@cornell.edu'><img class="icon" src="images/email.png"/></a>
+      <a href='https://www.linkedin.com/in/lily-pagan-58a19a133/'><img class="icon" src="images/linkedin.png"/></a>
+      <a href='https://github.com/lilypagan'><img class="icon" src="images/github.png"/></a>
+    </div>
+  </div>
+</div>
 </body>
