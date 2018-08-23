@@ -13,19 +13,24 @@
 
 <body>
 <!--navigation-->
-<nav class = "navbar">
-  <ul>
-    <li><a href="index.html">About</a></li>
-    <li><a href="work.html">Work</a></li>
-    <li><a  href="contact.html">Contact</a></li>
+<nav class= "navbar">
+  <ul  id="navbar">
+    <li><a class="tab" href="index.html">About</a></li>
+    <li><a class="tab" href="work.html">Work</a></li>
+    <li><a  class="tab" href="contact.html">Contact</a></li>
   </ul>
 </nav>
 
-<div class= 'container-fluid'>
+<div class= 'container-fluid' id="intro-section">
   <img class="home-pic" alt="orange background" src="images/orange.jpg"/>
   <img id="me-pic" alt= 'me' src="images/ME.png"/>
   <div class="intro">
-    <h1 class= "title-text"> HI, I'M LILY. </h1>
+    <h1 class="animation">
+     <span class="text-wrapper">
+       <span class="letters"><h1 class="title-text"> LILY PAGAN </h1></span>
+     </span>
+   </h1>
+    <!-- <h1 class= "title-text"> HI, I'M LILY. </h1> -->
     <h3 class= "subtitle-text"> Web Designer & Full Stack Developer </h3>
     <div class= 'contact-icons'>
       <a href='mailto:lp398@cornell.edu'><img class="icon" src="images/email.png"/></a>
@@ -33,5 +38,55 @@
       <a href='https://github.com/lilypagan'><img class="icon" src="images/github.png"/></a>
     </div>
   </div>
+  <!-- <a class="btn-scroll" href="#section2"><img id= "arrow"alt="Arrow Down Icon" src="images/arrow-down.png"></a> -->
 </div>
+
+<div id="about-section">
+
+</div>
+
+<div class="footer">
+  <div class= 'footer-icons'>
+    <a href='mailto:lp398@cornell.edu'><img class="icon" src="images/email.png"/></a>
+    <a href='https://www.linkedin.com/in/lily-pagan-58a19a133/'><img class="icon" src="images/linkedin.png"/></a>
+    <a href='https://github.com/lilypagan'><img class="icon" src="images/github.png"/></a>
+  </div>
+</div>
+
 </body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<script>
+//NAV
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('active');
+    }
+  });
+});
+
+//ANIMATION
+// Wrap every letter in a span
+$('.animation .letters').each(function(){
+  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+});
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.animation .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 900,
+    delay: function(el, i) {
+      return 50 * i;
+    }
+  }).add({
+    targets: '.animation',
+    opacity: 100,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
