@@ -46,6 +46,7 @@ body {
   color: black;
   text-align: center;
   font-weight: bold;
+  bottom: 50%;
 }
 
 .subtitle-text {
@@ -116,14 +117,19 @@ li a:hover {
 
 } */
 
+#work-section {
+  /* position: absolute; */
+  /* height: */
+}
+
 .footer {
   background-color: white;
   margin: 0 auto;
   text-align: center;
   padding: 3%;
-  /* margin-top:880px; */
+  /* margin-top:475/0px; */
   position: absolute;
-  top: 719%;
+  top: 713%;
   width: 100%;
 }
 
@@ -141,14 +147,21 @@ li a:hover {
 }
 
 .animation .text-wrapper {
+  position: absolute;
   display: inline-block;
   padding-top: 0.2em;
   padding-right: 0.05em;
   padding-bottom: 0.1em;
   overflow: hidden;
-  margin-top: 140px;
+  /* margin-top: 15%; */
+  bottom: 52%;
   margin-left: 34.5%;
 }
+
+/* .my-name {
+  top: 50%;
+  background-color: red;
+} */
 
 .animation .letter {
   display: inline-block;
